@@ -16,32 +16,31 @@ This script allows you to update the `Enabled` item in the `Edge_Security` dicti
    ```
 
 2. **Create a Virtual Environment (optional but recommended)**:
-    ```python3 -m venv venv
+    ```bash
+    python3 -m venv venv
     source venv/bin/activate
     ```
 
 3. **Install Dependencies: Install the required Python libraries using pip**:
-    ```pip install -r requirements.txt
-    ```
+    ```pip install -r requirements.txt```
 
 4. **Set the Fastly API Token: Export your Fastly API token as an environment variable**:
-    ```export FASTLY_API_TOKEN="your_api_token"
-    ```
+    ```export FASTLY_API_TOKEN="your_api_token"```
 
 Replace your_api_token with your actual Fastly API token.
 
 5. **Prepare a File with Service IDs: Create a text or CSV file containing the service IDs you want to update. Each service ID should be on a new line**
 
 Example (sids.txt):
-    ```5s2bl6FJAGofLWFQRxROj3
+    ```bash
+    5s2bl6FJAGofLWFQRxROj3
     Txy84LDUxsqnnbZTEvR2c0
     R1RBk93lLrJELx7vnxlnWL
     ```
 
-*Usage*
+**Usage**
 Run the script with the following command:
-    ```python3 dict_100.py <file> --value <number>
-    ```
+    ```python3 dict_100.py <file> --value <number>```
 
 <file>: Path to the file containing service IDs (e.g., sids.txt).
 <number>: The value to set for the Enabled item (e.g., 0, 100, or any number in between).
@@ -50,7 +49,7 @@ Example:
 ```
 This will update the Enabled item in the Edge_Security dictionary for all services listed in sids.txt to 100.
 
-*Output*
+**Output**
 The script will display the results in a tabular format, including:
 
 Service ID
@@ -59,7 +58,8 @@ Item Key
 Item Value
 Dictionary ID
 Example Output:
-```Results:
+```bash
+Results:
 +----------------------+----------------+-----------+-------------+----------------+
 | Service ID           | Service Name   | Item Key  | Item Value  | Dictionary ID  |
 +----------------------+----------------+-----------+-------------+----------------+
@@ -69,13 +69,13 @@ Example Output:
 +----------------------+----------------+-----------+-------------+----------------+
 ```
 
-*Requirements*
+**Requirements**
 The script requires the following Python libraries:
 requests
 tabulate
 These are listed in the requirements.txt file.
 
-*Troubleshooting*
+**Troubleshooting**
 1. Missing Fastly API Token: Ensure the FASTLY_API_TOKEN environment variable is set:
 ```export FASTLY_API_TOKEN="your_api_token"
 ```
