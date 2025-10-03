@@ -22,14 +22,17 @@ This script allows you to update the `Enabled` item in the `Edge_Security` dicti
     ```
 
 3. **Install Dependencies: Install the required Python libraries using pip**:
+
     ```pip install -r requirements.txt```
 
 4. **Set the Fastly API Token: Export your Fastly API token as an environment variable**:
+
     ```export FASTLY_API_TOKEN="your_api_token"```
 
 Replace your_api_token with your actual Fastly API token.
 
-5. **Prepare a File with Service IDs: Create a text or CSV file containing the service IDs you want to update. Each service ID should be on a new line**
+5. **Prepare a File with Service IDs:** 
+Create a text or CSV file containing the service IDs you want to update. Each service ID should be on a new line
 
 Example (sids.txt):
     ```bash
@@ -38,14 +41,15 @@ Example (sids.txt):
     R1RBk93lLrJELx7vnxlnWL
     ```
 
-**Usage**
+**Usage**:
 Run the script with the following command:
     ```python3 dict_100.py <file> --value <number>```
 
 <file>: Path to the file containing service IDs (e.g., sids.txt).
 <number>: The value to set for the Enabled item (e.g., 0, 100, or any number in between).
 Example:
-```python3 dict_100.py sids.txt --value 100
+```bash
+python3 dict_100.py sids.txt --value 100
 ```
 This will update the Enabled item in the Edge_Security dictionary for all services listed in sids.txt to 100.
 
