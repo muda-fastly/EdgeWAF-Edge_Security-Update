@@ -40,7 +40,7 @@ Create a text or CSV file containing the service IDs you want to update. Each se
 
 Example (sids.txt):
 
-    ```bash
+    ```
     5s2bl6FJAgOfLWFQRxROj3
     Txy84LDUxsqNNbZTEvR2c0
     R1RBk93lLrjelX7vnxlnWL
