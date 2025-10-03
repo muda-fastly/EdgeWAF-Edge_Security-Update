@@ -23,11 +23,15 @@ This script allows you to update the `Enabled` item in the `Edge_Security` dicti
 
 3. **Install Dependencies: Install the required Python libraries using pip**:
 
-    ```pip install -r requirements.txt```
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 4. **Set the Fastly API Token: Export your Fastly API token as an environment variable**:
 
-    ```export FASTLY_API_TOKEN="your_api_token"```
+    ```bash
+    export FASTLY_API_TOKEN="your_api_token"
+    ```
 
 Replace your_api_token with your actual Fastly API token.
 
@@ -36,9 +40,9 @@ Create a text or CSV file containing the service IDs you want to update. Each se
 
 Example (sids.txt):
     ```bash
-    5s2bl6FJAGofLWFQRxROj3
-    Txy84LDUxsqnnbZTEvR2c0
-    R1RBk93lLrJELx7vnxlnWL
+    5s2bl6FJAgOfLWFQRxROj3
+    Txy84LDUxsqNNbZTEvR2c0
+    R1RBk93lLrjelX7vnxlnWL
     ```
 
 **Usage**:
@@ -81,9 +85,9 @@ These are listed in the requirements.txt file.
 
 **Troubleshooting**
 1. Missing Fastly API Token: Ensure the FASTLY_API_TOKEN environment variable is set:
-```export FASTLY_API_TOKEN="your_api_token"
-```
+
+```export FASTLY_API_TOKEN="your_api_token"```
 2. Permission Errors: Ensure your Fastly API token has the necessary permissions to manage services and dictionaries.
 3. Python Version: Ensure you are using Python 3.7 or higher:
-```python3 --version
-```
+
+```python3 --version```
