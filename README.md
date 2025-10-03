@@ -39,6 +39,7 @@ Replace your_api_token with your actual Fastly API token.
 Create a text or CSV file containing the service IDs you want to update. Each service ID should be on a new line
 
 Example (sids.txt):
+
     ```bash
     5s2bl6FJAgOfLWFQRxROj3
     Txy84LDUxsqNNbZTEvR2c0
