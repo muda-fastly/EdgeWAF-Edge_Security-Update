@@ -48,7 +48,9 @@ Example (sids.txt):
 
 **Usage**:
 Run the script with the following command:
-    ```python3 dict_100.py <file> --value <number>```
+    ```bash
+    python3 dict_100.py <file> --value <number>
+    ```
 
 <file>: Path to the file containing service IDs (e.g., sids.txt).
 <number>: The value to set for the Enabled item (e.g., 0, 100, or any number in between).
@@ -87,8 +89,12 @@ These are listed in the requirements.txt file.
 **Troubleshooting**
 1. Missing Fastly API Token: Ensure the FASTLY_API_TOKEN environment variable is set:
 
-```export FASTLY_API_TOKEN="your_api_token"```
+```bash
+export FASTLY_API_TOKEN="your_api_token"
+```
 2. Permission Errors: Ensure your Fastly API token has the necessary permissions to manage services and dictionaries.
 3. Python Version: Ensure you are using Python 3.7 or higher:
 
-```python3 --version```
+```bash
+python3 --version
+```
